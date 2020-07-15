@@ -10,13 +10,18 @@
 @import "base/animations";
 
 
-
+@import "pages/home.scss";
 
 @import "components/button" ;
 @import "components/composititon";
+@import "components/feature-box";
+@import "components/story";
+@import "components/card";
+@import "components/bg-video";
+@import "components/form";
 
 
-@import "pages/home";
 
 @import "layout/grid";
 @import "layout/header";
+@import "layout/footer";
