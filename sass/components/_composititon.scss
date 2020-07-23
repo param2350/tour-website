@@ -16,16 +16,43 @@
         &--p1 {
             left: 0;
             top: -2rem;
+
+            @include respond(tab-port){
+                left: -7rem;
+                top: -2rem;
+            }
+
+            @include respond(phone){
+                left: 0rem;
+                top: -2rem;
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
+
+            @include respond(tab-port){
+                right: 0rem;;
+                top: -2rem;
+            }
+
         }
 
         &--p3 { 
             left: 20%;
             top: 10rem;
+
+            @include respond(tab-port){
+                left: 15%;
+                top: -4rem;
+            }
+
+            @include respond(phone){
+                left: 30%;
+                top: -4rem;
+            }
+    
         }
 
         &:hover {
@@ -34,14 +61,52 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
 
+
+            
+        @include respond(phone){
+            outline: none;
+            
+
         }
 
+        @include respond(tab-port){
+            
+            outline: none;
+            
+
+        }
+
+        }
+
+
+        @include respond(phone){
+            width: 45%;
+            outline-offset: none;
+            
+
+        }
+
+        @include respond(tab-port){
+            
+            outline-offset: none;
+            
+
+        }
+
+     
         
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(.9);
     }
+
+    @include respond(tab-port){
+        margin-bottom: 13rem;
+
+    }
+
+  
  
     
     
